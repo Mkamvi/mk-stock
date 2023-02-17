@@ -27,7 +27,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "lp": "cp -r ./out ~/.vscode/extensions/mk-stock/out && cp ./package.json ~/.vscode/extensions/mk-stock/package.json"
   },
   "devDependencies": {
     "@types/glob": "^8.0.1",
