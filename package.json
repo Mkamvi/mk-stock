@@ -28,7 +28,8 @@
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "lp": "cp -r ./out ~/.vscode/extensions/mk-stock/out && cp ./package.json ~/.vscode/extensions/mk-stock/package.json"
+    "lp": "cp -r ./ ~/.vscode/extensions/mk-stock",
+    "li": "code --install-extension ./mk-stock-0.0.1.vsix"
   },
   "devDependencies": {
     "@types/glob": "^8.0.1",
